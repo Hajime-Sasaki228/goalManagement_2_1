@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{commons/layout}">
+<head>
+<title>2021年目標管理No.2(1) | Login</title>
+<meta name="description" />
+</head>
+<body>
+	<div class="container-fluid">
+		<div layout:fragment="contents" th:remove="tag">
+
+			<div class="main-wrapper">
+					<div th:if="${message}">
+						<span th:text="${message}"></span>
+						<hr />
+					</div>
+					
+					<div class="title-text">ログイン</div>
+
+					<form method="post" th:action="@{/login}" >
+						<div class="input-area">
+							<div><label for="email">Eメールを入力してください</label></div>
+							<input type="text" name="email" id="email" placeholder="a@a.co.jp" />
+						</div>
+						<div class="input-area">
+							<div><label for="password">パスワードを入力してください</label></div>
+							<input type="password" name="password" id="password" placeholder="パスワード" />
+						</div>
+						<div class="btn-wrapper">
+							<button type="submit" name="loginBtn" class="index-btn">ログイン</button>
+						</div>
+					</form>
+
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

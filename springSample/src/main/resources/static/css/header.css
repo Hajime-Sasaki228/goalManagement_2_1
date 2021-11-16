@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.headline {
+	display: flex;
+	color: #fff;
+	background-color: #55c500;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+.title-area {
+	margin: 0 auto 0 0;
+    position:relative;
+    width:470px;
+    height:120px;
+}
+.title-area .link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.header-btn-area {
+	max-width: 220px;
+	max-height: 120px;
+	margin: 0 20px 0 auto;
+}
+.header-btn-wrapper {
+	width: 150px;
+	margin: 10px auto;
+	text-align: center;
+	border-radius: 10px;
+	border: 2px solid #fff;
+	background-color: #55c500;
+}
+.btn {
+	padding: 10px;
+}
+.btn:hover {
+	background-color: #fff;
+	color: #55c500;
+}

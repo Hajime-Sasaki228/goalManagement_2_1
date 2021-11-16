@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.footer-area {
+	background-color: #3d4040;
+	color: #fff;
+}
+.footer-text {
+	margin: 0 auto 0 20px;
+	padding-top: 30px;
+	padding-bottom: 30px; 
+	vertical-align: middle;
+}

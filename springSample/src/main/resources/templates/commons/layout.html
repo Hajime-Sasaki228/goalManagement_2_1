@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE"></title>
+<meta name="description" content="common-meta">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/header.css" rel="stylesheet" type="text/css" />
+<link href="css/footer.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+	
+	<!-- ヘッダー -->
+	<div layout:replace="~{commons/header::header}"></div>
+	
+	<!-- メイン -->
+	<main>
+		<div layout:fragment="contents"></div>
+	</main>
+	
+	<!-- フッター -->
+	<div layout:replace="~{commons/footer::footer}"></div>
+	
+  </div>
+</body>
+</html>

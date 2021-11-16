@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+.flex {
+	display: flex;
+}
+
+.main-wrapper {
+	margin: 10px 20px;
+}
+
+.title-text {
+	margin: 4px auto;
+}
+
+.input-area {
+	margin: 20px auto;
+}
+
+.btn-wrapper {
+	margin: 10px;
+	margin-left: auto;
+}
+
+.signup-area {
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 600px;
+	text-align: center;
+	border: 2px solid gray;
+	border-radius: 10px;
+}
+
+.index-content {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.index-btn {
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: baseline;
+	width: 150px;
+	padding: 10px 20px;
+	color: #fff;
+	background-color: #55c500;
+	border: solid 2px #55c500;
+	border-radius: 10px;
+}
+
+.index-btn:hover {
+	color: #55c500;
+	background-color: #fff;
+}
+
+.message {
+	font-size: 24px;
+}
+.error-msg {
+	margin: 10px auto;
+	color: red;
+}

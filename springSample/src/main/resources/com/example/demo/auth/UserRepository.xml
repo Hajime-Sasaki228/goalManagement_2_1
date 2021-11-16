@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.auth.UserRepository">
+
+	<insert id="signupUser" parameterType="com.example.demo.auth.User"
+				useGeneratedKeys="true" keyProperty="id">
+	<![CDATA[
+		INSERT INTO userbasicinfo (id, user_name, email, user_password)
+		VALUES (#{id}, #{username}, #{email}, #{password}) 
+	]]>
+	</insert>
+
+    <select id="identifyUser" parameterType="java.lang.String" resultMap="userDetails">
+    <![CDATA[
+        SELECT * FROM userbasicinfo WHERE userbasicinfo.email= #{email}
+    ]]>
+    </select>
+    
+    <resultMap type="com.example.demo.auth.User" id="userDetails">
+    	<result property="id" column="id" />
+       	<result property="username" column="user_name" />
+       	<result property="email" column="email" />
+       	<result property="password" column="user_password" />
+    </resultMap>
+</mapper>
