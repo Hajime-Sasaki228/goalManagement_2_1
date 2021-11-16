@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{commons/authedLayout}">
+<head>
+<title>2021年目標管理No.2(1) | Home</title>
+<meta name="description" />
+</head>
+<body>
+	<div class="container-fluid">
+		<div layout:fragment="contents" th:remove="tag">
+
+			<div class="main-wrapper">
+
+				<div th:if="${message}">
+					<div th:text="${message}" class="message"></div>
+					<hr />
+				</div>
+
+				<div class="title-text">TODO: ユーザー一覧をDBから取得して画面に表示する</div>
+
+				<table>
+					<tr>
+						<th scope="col">userName</th>
+						<th scope="col">email</th>
+					</tr>
+					<tr>
+						<td>sasaki</td>
+						<td>sasaki@a.jp</td>
+					</tr>
+					<tr>
+						<td>tanaka</td>
+						<td>tanaka@a.jp</td>
+					</tr>
+					<tr>
+						<td>yamada</td>
+						<td>yamada@a.jp</td>
+					</tr>
+				</table>
+				<form method="post" th:action="@{/logout}">
+					<div class="btn-wrapper index-content">
+						<button type="submit" name="logoutBtn" class="index-btn">ログアウト</button>
+					</div>
+				</form>
+				
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

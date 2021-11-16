@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+	background: #FFF;
+	margin: 0px;
+	font-family: "メイリオ", sans-serif;
+	font-size: 80%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+main {
+  flex: 1;	
+}
+input {
+	padding: 8px;
+}
+a {
+	  display: block;
+	  text-decoration: none;
+}
+hr {
+	margin-bottom: 20px; 
+}
+a:link, a:visited, a:active {
+  color: #fff;
+}

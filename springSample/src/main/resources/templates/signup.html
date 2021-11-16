@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{commons/layout}">
+<head>
+<title>2021年目標管理No.2(1) | signup</title>
+<meta name="description" />
+</head>
+<body>
+	<div class="container-fluid">
+		<div layout:fragment="contents" th:remove="tag">
+
+			<div class="main-wrapper">
+				<div class="signup-area">
+					<div class="title-text">ユーザー登録</div>
+
+					<div th:if="${errMsgList}">
+						<div th:each="errMsg : ${errMsgList}">
+							<span th:text="${errMsg}" class="error-msg"></span>
+						</div>
+						<hr />
+					</div>
+
+					<form method="post" th:action="@{/signup}">
+
+						<div class="input-area">
+							<div>
+								<label for="userName">ユーザー名を入力してください</label>
+							</div>
+							<input type="text" name="userName" id="userName"
+								placeholder="ユーザー名" />
+						</div>
+						<div class="input-area">
+							<div>
+								<label for="email">emailを入力してください</label>
+							</div>
+							<input type="text" name="email" id="email"
+								placeholder="email@sample.co.jp" />
+						</div>
+						<div class="input-area">
+							<div>
+								<label for="password">パスワードを入力してください</label>
+							</div>
+							<input type="password" name="password" id="password"
+								placeholder="パスワード" />
+						</div>
+						<div class="input-area">
+							<div>
+								<label for="passwordConfirm">パスワード(確認用)を入力してください</label>
+							</div>
+							<input type="password" name="passwordConfirm" id="passwordConfirm"
+								placeholder="パスワード(確認用)" />
+						</div>
+						<div class="btn-wrapper">
+							<button type="submit" name="signupBtn" class="index-btn">登録する</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{commons/layout}">
+<head>
+<title>2021年目標管理No.2(1)</title>
+<meta name="description" />
+</head>
+<body>
+	<div class="container-fluid">
+		<div layout:fragment="contents" th:remove="tag">
+
+			<div class="main-wrapper">
+
+				<div class="btn-wrapper index-content flex">
+					<a class="index-btn" th:href="@{/login}">ログイン画面へ</a>
+					<a class="index-btn" th:href="@{/signup}">ユーザー登録画面へ</a>
+				</div>
+
+				<div class="title-text">ユーザー一覧</div>
+
+				<table>
+					<tr>
+						<th scope="col">ユーザーID</th>
+						<th scope="col">ユーザー名</th>
+						<th scope="col">パスワード</th>
+					</tr>
+					<tr>
+						<td>aaaa</td>
+						<td>bbbb</td>
+						<td>cccc</td>
+					</tr>
+					<tr>
+						<td>aaaa</td>
+						<td>bbbb</td>
+						<td>cccc</td>
+					</tr>
+				</table>
+
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
