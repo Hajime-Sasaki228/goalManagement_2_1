@@ -16,10 +16,10 @@
 #### 2.1 フロントエンド  
 ・HTML  
 ・CSS  
-・JavaScript  
+・Thymeleaf  
 #### 2.2 バックエンド  
-・Java（Spring）  
-・Apache Tomcat 
+・Java（Spring Boot）  
+・Spring Security  
 #### 2.3 データベース  
-・PostgreSQL  
-  
+・MySQL  
+・MyBatis  
